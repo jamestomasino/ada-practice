@@ -10,3 +10,5 @@ Collections of tutorials, books, and other exercises for learning Ada.
 - http://www.pchapin.org/VTC/TutorialAda/AdaCrash.pdf
 - http://learnadanow.com/Ada-Distilled-24-January-2011-Ada-2005-Version.pdf
 - http://www.ada-auth.org/standards/ada12.html
+
+Compile with gnatmake
