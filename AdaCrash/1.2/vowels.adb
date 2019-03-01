@@ -1,9 +1,7 @@
-with Ada.Text_IO;
-with Ada.Integer_Text_IO;
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 procedure Vowels is
-  use Ada.Text_IO;
-  use Ada.Integer_Text_IO;
   Letter      : Character;
   Vowel_Count : Integer := 0;
   Y_Count     : Integer := 0;
@@ -14,10 +12,8 @@ begin
       when 'A'|'E'|'I'|'O'|'U'|
            'a'|'e'|'i'|'o'|'u' =>
            Vowel_Count := Vowel_Count + 1;
-
       when 'Y'|'y' =>
         Y_Count := Y_Count + 1;
-
       when others =>
         null;
     end case;

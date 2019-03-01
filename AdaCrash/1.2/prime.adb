@@ -1,10 +1,10 @@
-with Ada.Text_IO;
-with Ada.Integer_Text_IO;
+with Ada.Text_IO;          use Ada.Text_IO;
+with Ada.Integer_Text_IO;  use Ada.Integer_Text_IO;
 
 procedure Prime is
-  use Ada.Text_IO;
-  use Ada.Integer_Text_IO;
   Number : Integer;
+  N : Integer;
+  I : Integer;
 begin
   Put("Enter an integer: ");
   Get(Number);
@@ -12,7 +12,11 @@ begin
     Put("The value "); Put(Number, 0); Put_Line(" is bad.");
   else
     Put("The value "); Put(Number, 0);
-    for I in 2 .. (Number - 1) loop
+    I := 1;
+    N := Number;
+    while I <= N loop
+      I := I + 1;
+      N := Number / I;
       if Number rem I = 0 then
         Put_Line(" is not prime.");
         return;
