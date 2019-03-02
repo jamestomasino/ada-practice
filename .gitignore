@@ -10,3 +10,4 @@
 # Ignore specific build filetypes
 *.ali
 *.o
+*.pdf
